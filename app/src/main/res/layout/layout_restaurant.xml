@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/splash_screen"
+            android:id="@+id/restaurant_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/restaurant_name"
+            android:text="Restaurant A"
+            android:layout_toRightOf="@+id/restaurant_image"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/restaurant_address"
+            android:text="Restaurant A"
+            android:layout_toRightOf="@+id/restaurant_image"
+            android:layout_below="@+id/restaurant_name"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ccc"
+            android:singleLine="true"
+            android:layout_marginRight="10dp"
+            android:ellipsize="marquee"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

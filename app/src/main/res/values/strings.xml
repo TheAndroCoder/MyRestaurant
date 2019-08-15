@@ -12,4 +12,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="nearby_restaurants">Nearby Restaurant</string>
+    <string name="order_history">Previous Orders</string>
+    <string name="update_info">Update Information</string>
+    <string name="logout">Logout</string>
+
 </resources>

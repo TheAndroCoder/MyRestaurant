@@ -3,36 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group>
         <item
-            android:id="@+id/nav_logout"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Logout" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_nearby"
+            android:icon="@drawable/ic_restaurant_gray_24dp"
+            android:title="@string/nearby_restaurants" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+    <group>
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_gray_24dp"
+            android:title="@string/order_history" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_update_info"
+            android:icon="@drawable/ic_account_circle_gray_24dp"
+            android:title="@string/update_info" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_gray_24dp"
+            android:title="@string/logout" />
+    </group>
 
 </menu>

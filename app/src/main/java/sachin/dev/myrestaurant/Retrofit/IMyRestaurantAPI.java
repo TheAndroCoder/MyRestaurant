@@ -6,12 +6,16 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
+import sachin.dev.myrestaurant.Model.RestaurantModel;
 import sachin.dev.myrestaurant.Model.UpdateUserModel;
 import sachin.dev.myrestaurant.Model.UserModel;
 
 public interface IMyRestaurantAPI {
     @GET("user")
     Observable<UserModel> getUser(@Query("key") String apikey, @Query("fbid")String fbid);
+
+    @GET("restaurant")
+    Observable<RestaurantModel> getRestaurants(@Query("key")String apiKey);
 
     @POST("user")
     @FormUrlEncoded

@@ -50,6 +50,7 @@ public class SplashScreen extends AppCompatActivity {
         Dexter.withActivity(this).withPermission(Manifest.permission.ACCESS_FINE_LOCATION).withListener(new PermissionListener() {
             @Override
             public void onPermissionGranted(PermissionGrantedResponse response) {
+                dialog.show();
                 AccountKit.getCurrentAccount(new AccountKitCallback<Account>() {
                     @Override
                     public void onSuccess(Account account) {
@@ -107,7 +108,7 @@ public class SplashScreen extends AppCompatActivity {
 
     private void init() {
         dialog=new SpotsDialog.Builder().setCancelable(false).setContext(this).build();
-        dialog.show();
+        //dialog.show();
         iMyRestaurantAPI= RetrofitClient.getInstance(Common.API_RESTAURANT_ENDPOINT).create(IMyRestaurantAPI.class);
     }
 
